@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--~~~~~~~~~~~~~~~ Favicon ~~~~~~~~~~~~~~~-->
+  <link rel="shortcut icon" href="/src/imgs/icons/icon-128x128.png" />
+
+  <!--~~~~~~~~~~~~~~~ Font Awesome ~~~~~~~~~~~~~~~-->
+  <link rel="stylesheet" href="/src/css/all.min.css" />
+
+  <!--~~~~~~~~~~~~~~~ Remix Icon ~~~~~~~~~~~~~~~-->
+  <!-- <link rel="stylesheet" href="/src/css/remixicon.css" /> -->
+
+  <!--  Swiper's CSS -->
+  <link rel="stylesheet" href="/src/css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!--~~~~~~~~~~~~~~~ CSS ~~~~~~~~~~~~~~~-->
+  <link href="./output.css" rel="stylesheet">
+
+  <title>responsive || burger website</title>
+</head>
+
+<body>
+
+  <header class="bg-primaryColor z-10 fixed top-0 left-0 w-full">
+
+
+    <nav class="container w-full  relative h-14 flex justify-between items-center">
+      <!-- premier enfant -->
+      <div class="logo flex gap-3">
+        <img class="h-11" src="./imgs/icons/icon-128x128.png" class="h-11" alt="icon">
+        <span class="text-2xl">ZENWEX.com</span>
+      </div>
+
+
+      <!-- deuxieme enfant -->
+      <div class="nav-menu border-b-4  md:border-none ease-in-out duration-[.7s]  w-full sm:top-[-25vh] md:top-2 z-[1000]  py-1 bg-primaryColor md:bg-transparent   
+       sm:absolute ld:relative  ">
+
+        <!-- les liens -->
+        <ul class=" flex flex-col md:flex-row items-center justify-center gap-4 text-center z-10">
+          <li><a class="nav-link hover:text-secondaryColor ease-in duration-200" href="#home" id="home">home</a></li>
+          <li><a class="nav-link hover:text-secondaryColor ease-in duration-200" href="#about" id="about">about Us</a>
+          </li>
+          <li><a class="nav-link hover:text-secondaryColor ease-in duration-200" href="#menu" id="menu">menu</a></li>
+          <li><a class="nav-link hover:text-secondaryColor ease-in duration-200" href="#reviews"
+              id="reviews">reviews</a>
+          </li>
+          <li><a class="nav-link hover:text-secondaryColor ease-in duration-200" href="#Contact"
+              id="Contact">Contact</a>
+          </li>
+        </ul>
+
+        <!-- l'icon de close -->
+        <div class="nav-close absolute cursor-pointer md:hidden -top-0 right-8">
+          <i class="fas fa-close"></i>
+        </div>
+
+      </div>
+      <!-- fin du deuxieme enfant -->
+
+      <!-- troisieme enfant -->
+      <div class="flex gap-5">
+        <div><i class="fas fa-moon cursor-pointer"></i></div>
+        <div id="hamburger">
+          <i class="fas fa-bars md:hidden cursor-pointer"></i>
+        </div>
+      </div>
+
+    </nav>
+  </header>
+
+
+  <!-- section home -->
+  <section id="home" class="flex flex-col justify-center items-center md:flex-row">
+    <div class="img-home z-[-1]  text-center flex justify-center px-8 animate-movingY">
+      <img src="./imgs/home-image.png" height="10" alt="" class=" md:w-full w-60 z-[-1]">
+    </div>
+    <div class="text px-8 relative flex flex-col justify-center md:justify-start items-center md:items-start gap-12">
+      <div class="text-[2rem] font-extrabold text-center md:text-start  ">VENTE HEUREUX AVEC DES
+        HAMBURGERS SAVOUREUX.</div>
+      <div
+        class="traitJaune h-2 md:w-[8rem] w-[85%] absolute lg:top-[6rem] md:top-[10rem] top-[7rem] md:left-7 bg-secondaryColor ">
+      </div>
+      <div class="text-xl text-center md:text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+        ipsam magnam id
+        harum
+        nesciunt nostrum
+        veniam vel adipisci illum molestiae fuga architecto minus, odio excepturi alias. Velit totam minima placeat aut
+        fugit quidem odio sint.</div>
+      <div class="flex text-center justify-center gap-11 items-center">
+        <div class="h-[3rem] w-[4rem]"><img src="./imgs/fourchette.png" class="h-full w-full" alt=""><b> Delicieux
+          </b>
+        </div>
+        <div class="h-[3rem] w-[4rem]"><img src="./imgs/plat.png" class="h-full w-full" alt=""><b> frais</b></div>
+        <div class="h-[3rem] w-[4rem]"><img src="./imgs/rectette.png" class="h-full w-full" alt=""><b> Organique</b>
+        </div>
+
+
+
+      </div>
+      <a href="" class="bg-orange-500 w-[10rem] p-4 text-center rounded-lg font-bold">En Savoir plus</a>
+    </div>
+  </section>
+
+
+
+  <section id="buy" class="flex flex-col md:grid md:grid-cols-3 gap-6 p-6">
+
+    <div class=" h-[9rem]  flex gap-6 items-center justify-center rounded-lg bg-yellow-600">
+      <div class="img w-1/2"><img class=" sm:w-[65%] md:w-[20rem]" src="./imgs/burger-1.png" alt="">
+      </div>
+      <div class="textBuy">
+        <b>Nourriture</b><br>
+        <b>Lorem ipsum dolor sit .</b><br>
+        <b>Acheter en ligne</b>
+      </div>
+    </div>
+
+    <div class=" h-[9rem]  flex gap-6 items-center justify-center rounded-lg bg-red-800">
+      <div class="img w-1/2"><img class=" w-[57%]" src="./imgs/snack-1.png" alt="">
+      </div>
+      <div class="textBuy">
+        <b>Nourriture</b><br>
+        <b>Lorem ipsum dolor sit .</b><br>
+        <b>Acheter en ligne</b>
+      </div>
+    </div>
+
+    <div class=" h-[9rem]  flex gap-6 items-center justify-center rounded-lg bg-green-900">
+      <div class="img w-1/2"><img class=" w-[52%]" src="./imgs/beverage-2.png" alt=""></div>
+      <div class="textBuy"><b>Nourriture</b><br>
+        <b>Lorem ipsum dolor sit .</b><br>
+        <b>Acheter en ligne</b>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="menu">
+    <div class="text px-8 relative flex flex-col justify-center  items-center  gap-12">
+      <div class="text-[1.4rem] font-extrabold text-center md:text-start  ">Notre meilleur menu.</div>
+      <div
+        class="traitJaune h-2 md:w-[8rem] w-[85%] absolute md:top-[10rem] lg:top-[8rem] top-[10rem] md:left-[40%] bg-secondaryColor ">
+      </div>
+      <div class="text-xl text-center md:text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Placeatpturi alias. Velit totam minima placeat aut
+        fugit quidem odio sint.</div>
+
+      <div class="tabs_wrap">
+        <div class="flex gap-8 justify-center flex-wrap">
+          <li class="btn active bg-primaryColorLight  ">
+            All
+          </li>
+          <li class="btn bg-primaryColorLight" data-tabs="food">
+            FOOD
+          </li>
+          <li class="btn bg-primaryColorLight" data-tabs="snack">
+            SNACK
+          </li>
+          <li class="btn bg-primaryColorLight" data-tabs="beverage">
+            BEVERAGE
+          </li>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="menu-items mt-8 flex justify-center">
+      <ul class="parent grid md:gap-x-[8rem] gap-6 lg:gap-6 grid-cols md:grid-cols-2 lg:grid-cols-4 items-center
+       justify-center">
+        <!-- food -->
+        <li class="item_wrap food flex flex-col items-start justify-between">
+          <div
+            class="img-food bg-primaryColorLight hover:bg-secondaryColor p-3 rounded-2xl flex justify-center items-center">
+            <img src="./imgs/burger-1.png" alt="burger-1"
+              class="w-40 h-80 hover:scale-105 ease-linear cursor-pointer duration-200">
+          </div>
+          <h3>REGULAR BEEF BURGER</h3>
+          <P>Lorem ipsum dolor sit <br> amet, consectetur <br> adipisicing elit.</P>
+          <span>$42.00</span>
+        </li>
+
+
+        <li class="item_wrap food flex flex-col items-start justify-between">
+          <div class="img-food bg-primaryColorLight hover:bg-secondaryColor p-3 rounded-2xl ">
+            <img src="./imgs/burger-2.png" alt="burger-1"
+              class="w-40 hover:scale-105 ease-linear cursor-pointer duration-200">
+          </div>
+          <h3>REGULAR BEEF BURGER</h3>
+          <P>Lorem ipsum dolor sit <br> amet, consectetur <br> adipisicing elit.</P>
+          <span>$42.00</span>
+        </li>
+
+        <li class="item_wrap food flex flex-col items-start justify-between">
+          <div class="img-food bg-primaryColorLight hover:bg-secondaryColor p-3 rounded-2xl ">
+            <img src="./imgs/burger-3.png" alt="burger-1"
+              class="w-40 hover:scale-105 ease-linear cursor-pointer duration-200">
+          </div>
+          <h3>REGULAR BEEF BURGER</h3>
+          <P>Lorem ipsum dolor sit <br> amet, consectetur <br> adipisicing elit.</P>
+          <span>$42.00</span>
+        </li>
+
+        <li class="item_wrap food flex flex-col items-start justify-between">
+          <div class="img-food bg-primaryColorLight hover:bg-secondaryColor p-3 rounded-2xl ">
+            <img src="./imgs/burger-4.png" alt="burger-1"
+              class="w-40 hover:scale-105 ease-linear cursor-pointer duration-200">
+          </div>
+          <h3>REGULAR BEEF BURGER</h3>
+          <P>Lorem ipsum dolor sit <br> amet, consectetur <br> adipisicing elit.</P>
+          <span>$42.00</span>
+        </li>
+
+        <!-- snack -->
+        <li class="item_wrap snack flex flex-col items-start justify-between">
+          <div class="img-snack bg-primaryColorLight hover:bg-secondaryColor p-3 rounded-2xl ">
+            <img src="./imgs/snack-1.png" alt="snack-1"
+              class="w-40 hover:scale-105 ease-linear cursor-pointer duration-200">
+          </div>
+          <h3>REGULAR BEEF snack</h3>
+          <P>Lorem ipsum dolor sit <br> amet, consectetur <br> adipisicing elit.</P>
+          <span>$42.00</span>
+        </li>
+
+
+        <li class="item_wrap snack flex flex-col items-start justify-between">
+          <div class="img-snack bg-primaryColorLight hover:bg-secondaryColor p-3 rounded-2xl ">
+            <img src="./imgs/snack-2.png" alt="snack-1"
+              class="w-40 hover:scale-105 ease-linear cursor-pointer duration-200">
+          </div>
+          <h3>REGULAR BEEF SNACK</h3>
+          <P>Lorem ipsum dolor sit <br> amet, consectetur <br> adipisicing elit.</P>
+          <span>$42.00</span>
+        </li>
+
+        <li class="item_wrap snack flex flex-col items-start justify-between">
+          <div class="img-snack bg-primaryColorLight hover:bg-secondaryColor p-3 rounded-2xl ">
+            <img src="./imgs/snack-3.png" alt="snack-1"
+              class="w-40 hover:scale-105 ease-linear cursor-pointer duration-200">
+          </div>
+          <h3>REGULAR BEEF snack</h3>
+          <P>Lorem ipsum dolor sit <br> amet, consectetur <br> adipisicing elit.</P>
+          <span>$42.00</span>
+        </li>
+
+        <li class="item_wrap snack flex flex-col items-start justify-between">
+          <div class="img-snack bg-primaryColorLight hover:bg-secondaryColor p-3 rounded-2xl ">
+            <img src="./imgs/snack-4.png" alt="snack-1"
+              class="w-40 hover:scale-105 ease-linear cursor-pointer duration-200">
+          </div>
+          <h3>REGULAR BEEF snack</h3>
+          <P>Lorem ipsum dolor sit <br> amet, consectetur <br> adipisicing elit.</P>
+          <span>$42.00</span>
+        </li>
+
+
+        <!-- beverage -->
+        <li class="item_wrap beverage flex flex-col items-start justify-between">
+          <div class="img-beverage bg-primaryColorLight hover:bg-secondaryColor p-3 rounded-2xl ">
+            <img src="./imgs/beverage-1.png" alt="beverage-1"
+              class="w-40 hover:scale-105 ease-linear cursor-pointer duration-200">
+          </div>
+          <h3>REGULAR BEEF beverage</h3>
+          <P>Lorem ipsum dolor sit <br> amet, consectetur <br> adipisicing elit.</P>
+          <span>$42.00</span>
+        </li>
+
+
+        <li class="item_wrap beverage flex flex-col items-start justify-between">
+          <div class="img-beverage bg-primaryColorLight hover:bg-secondaryColor p-3 rounded-2xl ">
+            <img src="./imgs/beverage-2.png" alt="beverage-1"
+              class="w-40 hover:scale-105 ease-linear cursor-pointer duration-200">
+          </div>
+          <h3>REGULAR BEEF beverage</h3>
+          <P>Lorem ipsum dolor sit <br> amet, consectetur <br> adipisicing elit.</P>
+          <span>$42.00</span>
+        </li>
+
+        <li class="item_wrap beverage flex flex-col items-start justify-between">
+          <div class="img-beverage bg-primaryColorLight hover:bg-secondaryColor p-3 rounded-2xl ">
+            <img src="./imgs/beverage-3.png" alt="beverage-1"
+              class="w-40 hover:scale-105 ease-linear cursor-pointer duration-200">
+          </div>
+          <h3>REGULAR BEEF beverage</h3>
+          <P>Lorem ipsum dolor sit <br> amet, consectetur <br> adipisicing elit.</P>
+          <span>$42.00</span>
+        </li>
+
+        <li class="item_wrap beverage flex flex-col items-start justify-between">
+          <div class="img-beverage bg-primaryColorLight hover:bg-secondaryColor p-3 rounded-2xl ">
+            <img src="./imgs/beverage-4.png" alt="beverage-1"
+              class="w-40 hover:scale-105 ease-linear cursor-pointer duration-200">
+          </div>
+          <h3>REGULAR BEEF beverage</h3>
+          <P>Lorem ipsum dolor sit <br> amet, consectetur <br> adipisicing elit.</P>
+          <span>$42.00</span>
+        </li>
+
+
+      </ul>
+    </div>
+
+
+  </section>
+  <script src="/src/scripts/unpkg.com-scrollreveal.js"></script>
+  <script type="text/javascript" src="/src/scripts/main.js"></script>
+</body>
+
+</html>
